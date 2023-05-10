@@ -86,6 +86,7 @@ const callChrome = async pup => {
                 executablePath: request.options.executablePath,
                 args: request.options.args || [],
                 pipe: request.options.pipe || false,
+                headless: 'old'
                 env: {
                     ...(request.options.env || {}),
                     ...process.env
