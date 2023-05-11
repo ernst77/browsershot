@@ -87,6 +87,7 @@ const callChrome = async pup => {
                 args: request.options.args || [],
                 pipe: request.options.pipe || false,
                 headless: false,
+                dumpio: true,
                 env: {
                     ...(request.options.env || {}),
                     ...process.env
